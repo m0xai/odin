@@ -1,0 +1,1 @@
+This is Kerem's first Odin Project file.
