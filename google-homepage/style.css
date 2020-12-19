@@ -1,0 +1,207 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ResetCSS Ending */
+
+div#header {
+  top: 15px;
+  margin-bottom: 10px;
+  height: 60px;
+}
+
+menu {
+  color: rgb(211, 207, 201);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  position: relative;
+  top: 16px;
+  height: 20px;
+}
+
+ul.menu-items-left {
+  margin: 7px 0 0 10px;
+  position: absolute;
+}
+
+ul.menu-items-right {
+  position: relative;
+  float: right;
+  margin: 7px 10px 0 0px;
+}
+
+li.menu-item {
+  display: inline-block;
+  opacity: 0.75;
+  padding-left: 15px;
+  text-decoration: rgb(232, 230, 227);
+  text-decoration-color: rgb(232, 230, 227);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+}
+
+.menu-item:hover,
+.menu-item:active {
+  text-decoration: underline;
+  text-decoration-color: currentcolor;
+}
+
+section.main {
+  height: 300px;
+  margin-top: 47px;
+  transition-delay: 0s, 0s;
+  transition-duration: 0.4s, 0.4s;
+  -moz-transition-property: margin-top;
+  transition-property: margin-top;
+  transition-timing-function: ease, ease;
+}
+
+div.logo-area,
+div.search,
+div.search-area,
+div.home-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.search {
+  height: 90px;
+}
+
+input.search-area {
+  width: 500px;
+  height: 30px;
+  border-radius: 40px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+button.suche,
+button.gluck {
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 14px;
+  border-radius: 4px;
+}
