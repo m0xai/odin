@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <script>
+        let droidScore = 0;
+        let humanbeingScore = 0;
+
+        function game() {
+            for (let i = 0; i < 5; i++) {
+                const options = ['paper', 'rock', 'scissor'];
+
+                let playerSelection = prompt('Your turn!').toLowerCase();
+                // We solve case sensitive problem with toLowerCase :)
+                function computerPlay(options) {
+                    return options[Math.floor(Math.random() * options.length)];
+                } // regular randomisation
+                let computerSelection = computerPlay(options);
+
+                function playRound(playerSelection, computerSelection) {
+                    if (playerSelection == computerSelection) {
+                        return console.log('The result is a tie!');
+                    } else if (playerSelection == 'rock') {
+                        if (computerSelection == 'scissor') {
+                            return [console.log('Humanbeing wins!'), humanbeingScore++];
+                        } else return [console.log('Droid wins!'), droidScore++];
+                    } else if (playerSelection == 'paper') {
+                        if (computerSelection == 'rock') {
+                            return [console.log('Humanbeing wins!'), humanbeingScore++];
+                        } else return [console.log('Droid wins!'), droidScore++];
+                    } else if (playerSelection == 'scissor') {
+                        if (computerSelection == 'paper') {
+                            return [console.log('Humanbeing wins!'), humanbeingScore++];
+                        } else return [console.log('Droid wins!'), droidScore++];
+                    } else
+                        return alert('Wrong Input. You can only enter: Paper, Rock, Scissor!');
+                }
+                // Use culry brackets to create more return statements.
+                // Then add tow plus on every score to inscrease.
+                playRound(playerSelection, computerSelection);
+            }
+        }
+        game();
+
+        function winner() {
+            if (humanbeingScore < droidScore) {
+                return console.log('Droid won!');
+            } else return console.log('Humanbeing won!');
+        }
+
+        winner();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
